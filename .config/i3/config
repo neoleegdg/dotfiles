@@ -228,8 +228,9 @@ bindsym $mod+w exec dmenu_extended_run
 # system shortcut
 bindsym $mod+Shift+o exec shutdown -h now
 bindsym $mod+Shift+i exec shutdown -r now
-bindsym $mod+Shift+p exec i3lock --color 222222
-bindsym Print exec screenshot
+bindsym $mod+Shift+u exec i3lock --color 222222
+bindsym $mod+Shift+p exec xfce4-screenshooter
+
 
 # compositor
 exec --no-startup-id compton 
