@@ -7,21 +7,33 @@ set hidden
  
 set rnu nu
 set tabstop=3 shiftwidth=3
-set incsearch
-set showmatch
 set ignorecase
 set smartcase
-set nowrap
+set incsearch
+set hlsearch
 
+map f <Plug>(easymotion-s)
+map F <Plug>(easymotion-s2)
+nnoremap <space> <C-w>
 inoremap jj <esc>
 nnoremap <tab> %
-nnoremap <space> /
 nnoremap <C-n> :NERDTreeToggle<CR>
-nnoremap <C-k> :CtrlPBuffer<CR>
-nnoremap <C-j> :b#<CR>
+nnoremap <C-m> :CtrlPBuffer<CR>
+nnoremap <C-b> :ls<CR>:b
+nnoremap <C-t> :b#<CR>
 nnoremap <C-l> :bn<CR>
 nnoremap <C-h> :bp<CR>
-nnoremap <C-b> :ls<CR>:b
+" page/scroll up/down
+nnoremap <C-j> <C-f>
+nnoremap <C-k> <C-b>
+nnoremap <S-j> <C-e>
+nnoremap <S-k> <C-y>
+" repositioning
+nnoremap gh zt
+nnoremap gm zz
+nnoremap gl zb
+
+
 
 
 
@@ -30,11 +42,14 @@ call plug#begin('~/.vim/plugins_by_vimplug')
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'easymotion/vim-easymotion'
+Plug 'xolox/vim-session'
+Plug 'xolox/vim-misc'
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
-Plug 'vim-syntastic/syntastic'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
+Plug 'vim-syntastic/syntastic'
 Plug 'ervandew/supertab'
 
 call plug#end()
@@ -46,6 +61,13 @@ set t_Co=256
 set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline_theme='badwolf'
+
+
+
+" vim-session
+let g:session_directory = "~/.vim/sessions"
+let g:session_autoload = "no"
+let g:session_autosave = "no"
 
 
 
