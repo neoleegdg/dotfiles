@@ -12,10 +12,11 @@ set smartcase
 set incsearch
 set hlsearch
 
-map f <Plug>(easymotion-s)
-map F <Plug>(easymotion-s2)
+map f <Plug>(easymotion-s2)
+map F <Plug>(easymotion-s)
 nnoremap <space> <C-w>
 inoremap jj <esc>
+inoremap kk <end>
 nnoremap <tab> %
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-m> :CtrlPBuffer<CR>
