@@ -233,6 +233,6 @@ bindsym $mod+Shift+p exec xfce4-screenshooter
 
 
 # compositor
-exec --no-startup-id compton 
+exec --no-startup-id compton --active-opacity 0.8 -i 0.75
 
 
