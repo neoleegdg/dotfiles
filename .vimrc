@@ -12,8 +12,8 @@ set smartcase
 set incsearch
 set hlsearch
 
-map f <Plug>(easymotion-s2)
-map F <Plug>(easymotion-s)
+map f <Plug>(easymotion-s)
+map F <Plug>(easymotion-s2)
 nnoremap <space> <C-w>
 inoremap jj <esc>
 inoremap kk <end>
