@@ -33,6 +33,10 @@ nnoremap <S-k> <C-y>
 nnoremap gh zt
 nnoremap gm zz
 nnoremap gl zb
+" cut copy paste (clipboard)
+vnoremap <C-x> "+d"
+vnoremap <C-c> "+y"
+vnoremap <C-v> "+p"
 
 
 
