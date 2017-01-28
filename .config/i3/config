@@ -220,6 +220,7 @@ assign [class="chromium-browser"] $tag1
 
 assign [class="Skype"] $tag8
 
+exec_always spotify
 for_window [class="Spotify"] move to workspace $tag9
 
 # app shortcut
