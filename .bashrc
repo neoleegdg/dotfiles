@@ -122,5 +122,5 @@ POWERLINE_BASH_SELECT=1
 . /usr/local/lib/python3.5/dist-packages/powerline/bindings/bash/powerline.sh
 
 
-
+export PATH="/home/neoleegdg/anaconda3/bin:$PATH"
 

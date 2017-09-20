@@ -167,7 +167,7 @@ bindsym $mod+r mode "resize"
 set $graphite 	         #333333
 set $graphitelite 	   #444444
 set $graphitelite2      #666666
-set $offwhite           #EEEEEE
+set $offwhite           #F8F8F8
 set $teal               #008080
 set $amber              #FFD200
 
