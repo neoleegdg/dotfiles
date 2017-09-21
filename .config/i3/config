@@ -218,10 +218,11 @@ exec --no-startup-id nitrogen --restore
 exec chromium-browser
 assign [class="chromium-browser"] $tag1
 
-assign [class="Skype"] $tag8
-
 exec_always spotify
 for_window [class="Spotify"] move to workspace $tag9
+
+assign [class="Skype"] $tag8
+assign [class="Thunar"] $tag4
 
 # app shortcut
 bindsym $mod+w exec dmenu_extended_run 
@@ -235,5 +236,4 @@ bindsym $mod+Shift+p exec xfce4-screenshooter
 
 # compositor
 exec --no-startup-id compton --active-opacity 0.8 -i 0.75
-
 
