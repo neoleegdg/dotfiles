@@ -124,3 +124,7 @@ POWERLINE_BASH_SELECT=1
 
 export PATH="/home/neoleegdg/anaconda3/bin:$PATH"
 
+
+if [ "$COLORTERM" == "xfce4-terminal" ] ; then 
+	export TERM=xterm-256color
+fi
